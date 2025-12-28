@@ -16,8 +16,10 @@ public class Binomial {
 	public static int binomial1(int n, int k) {
 		if (k > n)
 			return 0;
-		if (k == 0 || n == 0)
+		if (k == 0 || n == k)
 			return 1;
+		if (n == 0) 
+            return 1;
 		return binomial1(n - 1, k) + binomial1(n - 1, k - 1);
 	}
 
