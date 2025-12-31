@@ -12,6 +12,7 @@ public class Binomial {
 		Integer.parseInt(args[1])));
 	}
 
+
 	// Computes the Binomial function, basic version.
 	public static int binomial1(int n, int k) {
 		if (k > n)
